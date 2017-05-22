@@ -16,11 +16,14 @@ require 'rubocop/rspec/example_group'
 require 'rubocop/rspec/example'
 require 'rubocop/rspec/hook'
 require 'rubocop/cop/rspec/cop'
+require 'rubocop/rspec/align_let_brace'
 require 'rubocop/rspec/factory_girl'
 
 RuboCop::RSpec::Inject.defaults!
 
 # cops
+require 'rubocop/cop/rspec/align_left_let_brace'
+require 'rubocop/cop/rspec/align_right_let_brace'
 require 'rubocop/cop/rspec/any_instance'
 require 'rubocop/cop/rspec/around_block'
 require 'rubocop/cop/rspec/be_eql'
